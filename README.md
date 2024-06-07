@@ -68,3 +68,18 @@ Output Images:
     <img src="./docs/imgs/HFAfter-2.jpg" alt="Output Image 2" height="300"/>
 </kbd>
 
+### Converting to black and white
+
+Original Image:
+
+<kbd>
+    <img src="./docs/imgs/HFAfter-1.jpg" alt="Input Image" height="300"/>
+</kbd>
+
+Command: `python HalfFrameUtils.py -i ./input -o ./output -bw`
+
+Output Image:
+
+<kbd>
+    <img src="./docs/imgs/BWAfter.jpg" alt="Output Image Image" height="300"/>
+</kbd>
