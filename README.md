@@ -49,10 +49,11 @@ Flags and arguements
 ### Splitting Half Frame
 
 Original Image:
-![Original Image](./docs/imgs/HFBefore.jpg)
+<kbd><img src="./docs/imgs/HFBefore.jpg" alt="Input Image" height="300"/></kbd>
 
 Command: `python HalfFrameUtils.py -i ./input -o ./output -hf`
 
 Output Images:
-![Output Image 1](./docs/imgs/HFAfter-1.jpg)
-![Output Image 2](./docs/imgs/HFAfter-2.jpg)
+
+<kbd><img src="./docs/imgs/HFAfter-1.jpg" alt="Output Image 1" height="300"/></kbd>
+<kbd><img src="./docs/imgs/HFAfter-2.jpg" alt="Output Image 2" height="300"/></kbd>
