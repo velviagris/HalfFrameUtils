@@ -46,6 +46,8 @@ Flags and arguements
 
 ## Examples
 
+###### All borders shown are for presenting the results and do not actually show up in the resulting image
+
 ### Splitting Half Frame
 
 Original Image:
