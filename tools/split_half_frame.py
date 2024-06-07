@@ -52,5 +52,5 @@ def process(file, import_folder_path, export_folder_path):
         os.mkdir(f"{export_folder_path}/hf")
 
     # Save the two halves
-    cv2.imwrite(f"{export_folder_path}/hf/{file}-1.jpg", left_image)
-    cv2.imwrite(f"{export_folder_path}/hf/{file}-2.jpg", right_image)
+    cv2.imwrite(f"{export_folder_path}/hf/{file[:-4]}-1.jpg", left_image)
+    cv2.imwrite(f"{export_folder_path}/hf/{file[:-4]}-2.jpg", right_image)

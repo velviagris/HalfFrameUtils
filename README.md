@@ -43,3 +43,16 @@ Flags and arguements
 | --blackwhite | -bw       | None   | Converts images to grayscale                | No       |
 | --input      | -i        | String | Input folder path                           | Yes      |
 | --output     | -o        | String | Output folder path                          | Yes      |
+
+## Examples
+
+### Splitting Half Frame
+
+Original Image:
+![Original Image](./docs/imgs/HFBefore.jpg)
+
+Command: `python HalfFrameUtils.py -i ./input -o ./output -hf`
+
+Output Images:
+![Output Image 1](./docs/imgs/HFAfter-1.jpg)
+![Output Image 2](./docs/imgs/HFAfter-2.jpg)
