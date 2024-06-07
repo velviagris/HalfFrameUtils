@@ -49,6 +49,7 @@ Flags and arguements
 ### Splitting Half Frame
 
 Original Image:
+
 <kbd><img src="./docs/imgs/HFBefore.jpg" alt="Input Image" height="300"/></kbd>
 
 Command: `python HalfFrameUtils.py -i ./input -o ./output -hf`
