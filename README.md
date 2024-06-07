@@ -1,5 +1,10 @@
 # HalfFrameUtils
 
+A collection of tools that help with post prcessing photos with an emphasis on half frame photograohy. Features so far include:
+
+- Splitting diptychs (2 half frame exposures on a single frame) into individual images.
+- Converting images to black and white.
+
 ## Installation and Usage
 
 ### Installation
