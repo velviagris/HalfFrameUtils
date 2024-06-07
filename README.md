@@ -5,6 +5,9 @@ A collection of tools that help with post prcessing photos with an emphasis on h
 - Splitting diptychs (2 half frame exposures on a single frame) into individual images.
 - Converting images to black and white.
 
+Limitations:
+ - Currently only supports jpgs.
+
 ## Installation and Usage
 
 ### Installation
