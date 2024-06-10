@@ -36,7 +36,7 @@ The general usage for this tool is as follows:
 `python HalfFrameUtils.py -hf -i ./input_folder -o ./output_folder`
 
 
-Flags and arguements
+#### Flags and arguements
 | Argument     | Shorthand | Type   | Description                                 | Required |
 |--------------|-----------|--------|---------------------------------------------|----------|
 | --halfframe  | -hf       | None   | Splits half frame exposures into two images | No       |
