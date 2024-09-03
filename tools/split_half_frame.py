@@ -7,7 +7,7 @@ def process(file, import_folder_path, export_folder_path):
     if img is None:
         print("Error: Image not found or unable to open.")
         return
-    
+
     height, width = img.shape[:2]
     center_x = width // 2
 
@@ -26,14 +26,14 @@ def process(file, import_folder_path, export_folder_path):
 
     # Find contours in the thresholded image
     contours, _ = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    
+
     # Sort contours by area and take the largest one which should be the black line
     contours = sorted(contours, key=cv2.contourArea, reverse=True)
     largest_contour = contours[0]
-    
+
     # Get the bounding box of the largest contour
     x, y, w, h = cv2.boundingRect(largest_contour)
-    
+
     # Determine the splitting line and the width of the black line
     splitting_line = region_start + x + w // 2
     line_width = w
@@ -42,11 +42,11 @@ def process(file, import_folder_path, export_folder_path):
         line_width = 175
     elif line_width > 190:
         line_width = 190
-    
+
     # Split the image into two halves without the black line
     left_image = img[:, :splitting_line - line_width // 2]
     right_image = img[:, splitting_line + line_width // 2:]
-    
+
     # Ensure output directory exists
     if not os.path.exists(f"{export_folder_path}/hf"):
         os.mkdir(f"{export_folder_path}/hf")
